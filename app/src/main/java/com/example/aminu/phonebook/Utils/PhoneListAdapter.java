@@ -9,9 +9,11 @@ import android.widget.BaseAdapter;
 import android.widget.TextView;
 
 import com.example.aminu.phonebook.Models.PhoneBook;
+import com.example.aminu.phonebook.Models.PhoneBooks;
 import com.example.aminu.phonebook.R;
 
 import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.List;
 import java.util.Locale;
 
@@ -25,15 +27,15 @@ public class PhoneListAdapter extends BaseAdapter {
 
     private Context context;
     LayoutInflater inflater;
-    private List<PhoneBook> phoneList = null;
-    private ArrayList<PhoneBook> tempList;
+    private List<PhoneBook> phoneList;
+    private List<PhoneBook> tempList;
 
     public PhoneListAdapter(Context context, List<PhoneBook> phoneList) {
         Log.d(TAG, "PhoneListAdapter: started");
 
         this.context = context;
         this.phoneList = phoneList;
-        this.tempList = new ArrayList<PhoneBook>();
+        this.tempList = new LinkedList<PhoneBook>();
         this.tempList.addAll(phoneList);
     }
 

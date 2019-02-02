@@ -52,10 +52,10 @@ public class CreateContactActivity extends AppCompatActivity implements View.OnC
 
     private void iniWidgets() {
 
-        create_nameText = (TextView) findViewById(R.id.create_nameText);
-        create_numberText = (TextView) findViewById(R.id.create_numberText);
-        create_contact_name = (EditText) findViewById(R.id.create_contact_name);
-        create_contact_number = (EditText) findViewById(R.id.create_contact_number);
+        create_nameText = (TextView) findViewById(R.id.nameText);
+        create_numberText = (TextView) findViewById(R.id.numberText);
+        create_contact_name = (EditText) findViewById(R.id.create_name);
+        create_contact_number = (EditText) findViewById(R.id.create_number);
         btn_back = (Button) findViewById(R.id.btn_back);
         btn_create = (Button) findViewById(R.id.btn_create);
         progressBar = (ProgressBar) findViewById(R.id.progressBar);

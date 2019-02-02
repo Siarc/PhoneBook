@@ -54,10 +54,10 @@ public class ContactInformationActivity extends AppCompatActivity implements Vie
 
     private void iniWidgets() {
 
-        update_nameText = (TextView) findViewById(R.id.update_nameText);
-        update_numberText = (TextView) findViewById(R.id.update_numberText);
-        update_contact_name = (EditText) findViewById(R.id.update_contact_name);
-        update_contact_number = (EditText) findViewById(R.id.update_contact_number);
+        update_nameText = (TextView) findViewById(R.id.nameText);
+        update_numberText = (TextView) findViewById(R.id.numberText);
+        update_contact_name = (EditText) findViewById(R.id.update_name);
+        update_contact_number = (EditText) findViewById(R.id.update_number);
         btn_back = (Button) findViewById(R.id.btn_back);
         btn_update = (Button) findViewById(R.id.btn_update);
         btn_delete = (Button) findViewById(R.id.btn_delete);
